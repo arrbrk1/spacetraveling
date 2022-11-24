@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  & + & {
+    margin-top: 3rem;
+  }
+
+  &:hover {
+    * {
+      color: var(--gray-100);
+    }
+
+    strong {
+      color: var(--pink-900);
+    }
+  }
+
+  * {
+    transition: color 0.1s;
+    color: var(--gray-200);
+  }
+
+  strong {
+    font-size: 1.75rem;
+    color: var(--gray-100);
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+
+  time {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  time,
+  span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+      font-size: 1rem;
+    }
+  }
+}
+
+.btn {
+  border: none;
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: var(--pink-900);
+  margin-top: 5rem;
+  width: min-content;
+  background-color: transparent;
+  white-space: nowrap;
+  transition: 1s;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
